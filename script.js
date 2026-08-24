@@ -12,7 +12,10 @@ const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matc
 function configureResourceLinks() {
   document.querySelectorAll("[data-resource]").forEach((element) => {
     const key = element.dataset.resource;
-    const url = PROJECT_LINKS[key];
+    // The markup carries the same URLs, so a stale copy of this file can never
+    // disable a link that is already live.
+    const markup = element.getAttribute("href");
+    const url = PROJECT_LINKS[key] || (markup && !markup.startsWith("#") ? markup : "");
 
     if (!url) {
       element.classList.add("is-pending");
