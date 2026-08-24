@@ -1,9 +1,10 @@
-// Update these URLs once the public resources are available.
+// Single source of truth for the public resource URLs; an empty entry keeps the
+// matching link disabled.
 const PROJECT_LINKS = {
-  paper: "",
-  code: "https://github.com/OraRL/OraRL",
+  paper: "https://arxiv.org/abs/2608.20492",
+  code: "https://github.com/HVision-NKU/OraRL",
   data: "https://huggingface.co/datasets/OraRL/OraRL-Data",
-  model: "https://huggingface.co/OraRL/models",
+  model: "https://huggingface.co/OraRL/Video-ORA-9B",
 };
 
 const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
