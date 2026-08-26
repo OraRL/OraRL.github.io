@@ -1065,6 +1065,31 @@ svg {
   transform: translateY(0);
 }
 
+@media (min-width: 861px) {
+  .hero-actions {
+    width: max-content;
+    flex-wrap: nowrap;
+  }
+}
+
+@media (min-width: 1121px) and (max-width: 1280px) {
+  .hero {
+    min-height: 0;
+    padding-top: 116px;
+    grid-template-columns: 1fr;
+    gap: 44px;
+  }
+
+  .hero-copy {
+    max-width: 850px;
+  }
+
+  .hero-showcase {
+    width: min(850px, 100%);
+    margin-inline: auto;
+  }
+}
+
 @media (max-width: 1120px) {
   :root {
     --shell: min(960px, calc(100vw - 44px));
