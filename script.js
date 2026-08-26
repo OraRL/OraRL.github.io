@@ -5,6 +5,7 @@ const PROJECT_LINKS = {
   code: "https://github.com/HVision-NKU/OraRL",
   data: "https://huggingface.co/datasets/OraRL/OraRL-Data",
   model: "https://huggingface.co/OraRL/Video-ORA-9B",
+  demo: "https://huggingface.co/spaces/OraRL/video-ora-9b-demo",
 };
 
 const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
